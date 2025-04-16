@@ -42,7 +42,31 @@ body {
 h1, h2 {
     font-family: 'Ordinary', sans-serif;
   }
-  
+.social-sidebar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+        
+.social-sidebar .social-icon {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 5px;
+    transition: all 0.3s ease;
+}
+        
+.social-sidebar .social-icon:hover {
+    transform: scale(1.2);
+    color: #0d6efd;
+}
 .social-icon {
     width: 40px;
     height: 40px;
