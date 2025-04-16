@@ -42,33 +42,31 @@ body {
 h1, h2 {
     font-family: 'Ordinary', sans-serif;
   }
-.social-sidebar {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px 10px;
-    border-radius: 10px 0 0 10px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-}
+
+/* Custom CSS untuk navbar gradasi dengan bayangan */
 .navbar-gradient {
+    /* Snippet: Gradasi latar belakang menggunakan linear-gradient */
     background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+    /* Snippet: Box-shadow untuk efek bayangan navbar */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Snippet: Transition untuk efek animasi halus */
     transition: all 0.3s ease;
 }
         
+/* Styling untuk brand/logo pada navbar */
 .navbar-gradient .navbar-brand {
     font-weight: 600;
+    /* Snippet: Text-shadow untuk efek bayangan pada teks */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
         
+/* Styling untuk item navigasi */
 .navbar-gradient .nav-link {
     position: relative;
     transition: all 0.3s ease;
 }
         
+/* Snippet: Pseudo-element untuk efek garis bawah pada hover */
 .navbar-gradient .nav-link:after {
     content: '';
     position: absolute;
@@ -80,20 +78,45 @@ h1, h2 {
     transition: width 0.3s ease;
 }
         
+/* Efek hover dan active pada menu navbar */
 .navbar-gradient .nav-link:hover:after,
 .navbar-gradient .nav-link.active:after {
     width: 100%;
-}        
+}
+        
+/* Custom CSS untuk sidebar media sosial dengan posisi tetap */
+.social-sidebar {
+    /* Snippet: Fixed positioning - elemen tetap pada posisinya saat scroll */
+    position: fixed;
+    right: 0;
+    top: 50%;
+    /* Snippet: Transform untuk perataan vertikal tengah */
+    transform: translateY(-50%);
+    /* Snippet: Background dengan transparansi */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 10px;
+    /* Snippet: Border-radius untuk sudut melengkung */
+    border-radius: 10px 0 0 10px;
+    /* Snippet: Box-shadow untuk efek bayangan */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    /* Snippet: Z-index untuk lapisan tampilan */
+    z-index: 999;
+}
+        
+/* Styling untuk ikon media sosial */
 .social-sidebar .social-icon {
     display: block;
     text-align: center;
     font-size: 1.5rem;
     color: #333;
     margin: 15px 5px;
+    /* Snippet: Transition untuk efek hover yang halus */
     transition: all 0.3s ease;
 }
         
+/* Efek hover pada ikon social media */
 .social-sidebar .social-icon:hover {
+    /* Snippet: Transform scale untuk efek pembesaran */
     transform: scale(1.2);
     color: #0d6efd;
 }
