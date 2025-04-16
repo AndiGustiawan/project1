@@ -93,7 +93,7 @@ h1, h2 {
     /* Snippet: Transform untuk perataan vertikal tengah */
     transform: translateY(-50%);
     /* Snippet: Background dengan transparansi */
-    background-color: rgba(255, 255, 255, 0.9);
+    background-image: linear-gradient(135deg, hsl(0, 1%, 73%) 0%, hsl(0, 7%, 86%) 100%);
     padding: 15px 10px;
     /* Snippet: Border-radius untuk sudut melengkung */
     border-radius: 10px 0 0 10px;
@@ -108,7 +108,7 @@ h1, h2 {
     display: block;
     text-align: center;
     font-size: 1.5rem;
-    color: #333;
+    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
     margin: 15px 5px;
     /* Snippet: Transition untuk efek hover yang halus */
     transition: all 0.3s ease;
