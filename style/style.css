@@ -53,7 +53,37 @@ h1, h2 {
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
 }
+.navbar-gradient {
+    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
         
+.navbar-gradient .navbar-brand {
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+        
+.navbar-gradient .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+        
+.navbar-gradient .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+        
+.navbar-gradient .nav-link:hover:after,
+.navbar-gradient .nav-link.active:after {
+    width: 100%;
+}        
 .social-sidebar .social-icon {
     display: block;
     text-align: center;
