@@ -6,15 +6,15 @@
   }
 
 body {
-    background-image: linear-gradient(135deg, hsl(0, 1%, 73%) 0%, hsl(0, 7%, 86%) 100%);
+    background-color: #E8C999;
 }
 
 .profile-img {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border: 5px solid #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 5px solid #8E1616;
+    box-shadow: 0 0.5rem 1rem rgba(204, 5, 5, 0.15);
 }
 
 .section-title {
@@ -23,32 +23,45 @@ body {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-
+.list-group-flush .list-group-item {
+    background-color: #8E1616;
+    border-top: 01px solid #E8C999;
+    border-left-color: #ff0707;
+    border-right-color: #e60000;
+  }
+.list-group-item {
+    border:1px #E8C999
+}
 .section-title::after {
     content: '';
     position: absolute;
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #0d6efd;
+    background-color: #E8C999;
     bottom: 0;
     left: 0;
 }
 .section-title h2 {
+    background-color: #8E1616;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 0;
 }
-h1, h2 {
+h1, h2,in,p {
     font-family: 'Ordinary', sans-serif;
+    color: #E8C999;
   }
-
+h5,a,strong {
+    color: #E8C999;
+    font-family: 'Ordinary', sans-serif;
+}
 /* Custom CSS untuk navbar gradasi dengan bayangan */
 .navbar-gradient {
     /* Snippet: Gradasi latar belakang menggunakan linear-gradient */
-    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+    background-color: #460f0f;
     /* Snippet: Box-shadow untuk efek bayangan navbar */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: -5px  10px #460f0f ;
     /* Snippet: Transition untuk efek animasi halus */
     transition: all 0.3s ease;
 }
@@ -57,9 +70,9 @@ h1, h2 {
 .navbar-gradient .navbar-brand {
     font-weight: 600;
     /* Snippet: Text-shadow untuk efek bayangan pada teks */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: #8E1616;
 }
-        
+#460f0f    
 /* Styling untuk item navigasi */
 .navbar-gradient .nav-link {
     position: relative;
@@ -72,7 +85,7 @@ h1, h2 {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: #E8C999;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
@@ -93,12 +106,12 @@ h1, h2 {
     /* Snippet: Transform untuk perataan vertikal tengah */
     transform: translateY(-50%);
     /* Snippet: Background dengan transparansi */
-    background-image: linear-gradient(135deg, hsl(0, 1%, 73%) 0%, hsl(0, 7%, 86%) 100%);
-    padding: 15px 10px;
+    background-color: #8E1616;
+    padding: 12px 8px;
     /* Snippet: Border-radius untuk sudut melengkung */
     border-radius: 10px 0 0 10px;
     /* Snippet: Box-shadow untuk efek bayangan */
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 10px #460f0f;
     /* Snippet: Z-index untuk lapisan tampilan */
     z-index: 999;
 }
@@ -108,7 +121,7 @@ h1, h2 {
     display: block;
     text-align: center;
     font-size: 1.5rem;
-    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    background-color: #8E1616;
     margin: 15px 5px;
     /* Snippet: Transition untuk efek hover yang halus */
     transition: all 0.3s ease;
@@ -117,8 +130,8 @@ h1, h2 {
 /* Efek hover pada ikon social media */
 .social-sidebar .social-icon:hover {
     /* Snippet: Transform scale untuk efek pembesaran */
-    transform: scale(1.2);
-    color: #0d6efd;
+    transform: scale(1.4);
+    color: #000000;
 }
 .social-icon {
     width: 40px;
@@ -126,21 +139,22 @@ h1, h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #707070;
-    color: white;
+    background-color: #2e2424;
+    color: #E8C999;
     border-radius: 50%;
     margin-right: 10px;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    background-color: #0b5ed7;
+    background-color: #8E1616;
+    
     transform: translateY(-3px);
 }
 
 .bio-card {
     height: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;;
 }
 
 .bio-card:hover {
@@ -148,7 +162,7 @@ h1, h2 {
 }
 
 .profile-header {
-    background-color: hwb(0 62% 37%);
-    background-image: linear-gradient(135deg, hsl(0, 1%, 73%) 0%, hsl(0, 7%, 86%) 100%);
-    color: white;
+    background-color: hwb(0 7% 21%);
+    background-image: linear-gradient(135deg, rgba(195, 191, 191, 0.679) 0%, hsla(0, 0%, 0%, 0.373) 100%);
+    color: rgb(170, 35, 35);
 }
