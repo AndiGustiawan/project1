@@ -5,49 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUGAS - PERANCANGAN WEB</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons - untuk icon-icon sosial media dan biodata -->
+    <!-- Bootstrap Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" title="no title">
 </head>
 <body>
-    <!-- Snippet: Navbar Fixed dengan Gradasi dan Bayangan -->
-    <!-- navbar-expand-lg: Navbar responsif yang melebar pada breakpoint lg -->
-    <!-- navbar-dark: Teks navbar berwarna terang untuk latar belakang gelap -->
-    <!-- fixed-top: Navbar tetap di bagian atas saat scroll -->
-    <!-- navbar-gradient: Class kustom untuk efek gradasi -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-gradient">
-        <!-- Snippet: Container - untuk penempatan konten yang terpusat -->
-        <div class="container">
-            <!-- Snippet: Navbar-brand - logo atau nama brand -->
-            <a style="font-family:Ordinary; font-size:28px; color:#E8C999" class="navbar-brand" href="#">Andi Gustiawan</a>
-            <!-- Snippet: Navbar-toggler - tombol hamburger untuk tampilan mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Snippet: Collapse - untuk menu yang dapat dikolapskan di mobile -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Snippet: Navbar-nav - untuk daftar menu navigasi -->
-                <!-- ms-auto: margin-start auto untuk menu rata kanan -->
-                <ul class="navbar-nav ms-auto">
-                    <!-- Snippet: Nav-item - item menu navigasi -->
-                    <li class="nav-item">
-                        <!-- Snippet: Nav-link - tautan navigasi -->
-                        <!-- active: menandakan halaman aktif saat ini -->
-                        <a class="nav-link active" href="#profile">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#biodata">Biodata</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-gradient">
+    <div class="container">
+        <a style="font-family:Ordinary; font-size:40px; color:#E8C999" class="navbar-brand" href="#">Andi Gustiawan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biodata">Biodata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#konten1">Informasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#konten2">Skills</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
+    </div>
+</nav>
+    
     <!-- Snippet: Fixed Social Media Sidebar - sidebar media sosial dengan posisi tetap -->
     <div class="social-sidebar">
         <!-- Snippet: Text-center - teks rata tengah -->
         <!-- mb-2: margin-bottom dengan ukuran 2 -->
-        <h5 class="text-center text-color=#E8C999 ">Follow</h5>
+        <h5 class="text-center mb-12 text-color=#E8C999" style="padding-top: 1px">Follow</h5>
         <!-- Snippet: Link dengan ikon Bootstrap -->
         <a href="https://www.facebook.com/share/1AFdAU2MAE" class="social-icon">
             <!-- Snippet: Bootstrap Icon - ikon Facebook -->
@@ -62,108 +60,487 @@
             <i class="bi bi-github"></i>
         </a>
     </div>
-
-    <!-- Snippet: Container - untuk konten utama -->
-    <!-- py-5: padding atas dan bawah ukuran 5 -->
-    <!-- margin-top: jarak atas untuk mencegah konten tertutup navbar -->
-    <div class="container py-5" style="margin-top: 70px; color:#E8C999">
-        <!-- Snippet: Row - sistem grid baris -->
-        <!-- justify-content-center: konten rata tengah horizontal -->
+    
+    <!-- NEW HOME SECTION -->
+    <section id="home" class="section-container home-section">
+        <div class="welcome-container animate__animated animate__jackInTheBox" id="welcome-element">
+            <h1 class="welcome-title">Selamat Datang</h1>
+            <p class="welcome-subtitle">Di Website Portfolio Andi Gustiawan</p>
+            <p class="lead">Saya adalah seorang mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan teknologi. Silahkan jelajahi portfolio saya untuk mengenal lebih jauh tentang siapa saya dan apa yang bisa saya lakukan.</p>
+            <a href="#profile" class="selengkapnya-btn">Mulai Eksplorasi</a>
+        </div>
+        <div class="scroll-down" id="scrollDown">
+            <a href="#profile" style="color: #E8C999; text-decoration: none;">
+                <i class="bi bi-chevron-double-down"></i>
+            </a>
+        </div>
+    </div>
+    </section>
+    
+ <!-- PROFILE SECTION - FULL PAGE -->
+ <section id="profile" class="section-container" style="background-color: #8E1616;">
+    <div class="container">
         <div class="row justify-content-center">
-            <!-- Snippet: Col - kolom dengan lebar lg-10 (10/12 dari lebar) -->
             <div class="col-lg-10">
-                <!-- Snippet: Card - komponen kartu -->
-                <!-- mb-4: margin bottom ukuran 4 -->
-                <!-- border-4: tebal border ukuran 4 -->
-                <!-- shadow: efek bayangan -->
-                <div class="card mb-4 border-5 shadow mb-4" style="background-color:#8E1616" id="profile">
-                    <!-- Snippet: Card-body - badan kartu -->
-                    <!-- p-0: padding 0 -->
-                    <div class="card-body p-0">
-                        <!-- Snippet: Profile header dengan text-center -->
-                        <!-- p-5: padding ukuran 5 di semua sisi --     >
-                        <!-- text-center: teks rata tengah -->
-                        <div class="profile-header p-5 text-center">
-                            <!-- Snippet: Rounded-circle - gambar berbentuk lingkaran -->
-                            <!-- mb-4: margin bottom ukuran 4 -->
-                            <img src="img/foto.jpeg" alt="profil" class="profile-img rounded-circle mb-4">
-                            <!-- Snippet: Display-5 - ukuran font heading besar -->
-                            <!-- fw-bold: font weight bold -->
-                            <h1 class="display-5 fw-bold">WEB PORTOFOLIO</h1>
-                            <!-- Snippet: Lead - teks dengan ukuran lebih besar -->
-                            <p class="lead">ANDI GUSTIAWAN</p>
-                        </div>
-                        
-                        <!-- Snippet: Padding berbeda untuk desktop dan mobile -->
-                        <!-- p-4: padding ukuran 4 untuk semua perangkat -->
-                        <!-- p-lg-5: padding ukuran 5 khusus untuk breakpoint lg ke atas -->
-                        <div class="p-4 p-lg-5">
-                            <h2 class="section-title">Tentang Saya</h2>
-                            <p class="lead">
-                                TUGAS PERANCANGAN WEB <br>
-                                ANDI GUSTIAWAN (2023610039)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Snippet: Card kedua untuk biodata -->
-                <!-- border-2: border tipis ukuran 2 -->
-                <div class="card border-2 shadow mb-4" style="background-color:#8E1616" id="biodata">
-                    <!-- Snippet: Card-body dengan padding -->
-                    <!-- p-4: padding ukuran 4 di semua sisi -->
-                    <div class="card-body p-4">
-                        <h2 class="section-title" style="background-color:#8E1616">Biodata</h2>
-                        <!-- Snippet: Row - untuk layout baris -->
-                        <div class="row">
-                            <!-- Snippet: Col - kolom penuh lebar -->
-                            <div class="col-md-16">
-                                <h2>
-                                <!-- Snippet: List-group - untuk daftar items dengan styling -->
-                                <!-- list-group-flush: menghilangkan border luar -->
-                                <ul class="list-group list-group-flush">
-                                    <!-- Snippet: List-group-item - item dalam daftar -->
-                                    <!-- px-0: padding horizontal 0 -->
-                                    <li class="list-group-item px-0">
-                                        <!-- Snippet: Bootstrap Icon dengan margin-end -->
-                                        <!-- me-2: margin end (kanan) ukuran 2 -->
-                                        <i class="bi bi-calendar-event me-2"style="color: #E8C999"></i>
-                                        <strong>Lahir :</strong> <in>Serang,Banten 17 Agustus 2003</in>
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        <!-- Snippet: Bootstrap Icon geolokasi -->
-                                        <i class="bi bi-geo-alt me-2" style="color: #E8C999"></i>
-                                        <strong>Domisili :</strong><in> Padang, Sumatera Barat</in></li>
-                                <!-- Snippet: List group bersarang -->
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item px-0">
-                                        <!-- Snippet: Bootstrap Icon email -->
-                                        <i class="bi bi-envelope me-2"style="color: #E8C999"></i>
-                                        <strong>Email :</strong> <in>moxer404@aol.com</in>
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        <!-- Snippet: Bootstrap Icon telepon -->
-                                        <i class="bi bi-telephone me-2 "style="color: #E8C999"></i>
-                                        <strong>Telepon :</strong><in> +62 858 097 222 46</in>
-                                    </li>
-                                    <li class="list-group-item px-0"></li>
-                                </ul> 
-                                </h2>
+                <div class="card border-2 shadow scroll-reveal" style="min-height: 80vh;">
+                    <div class="card-body p-5">
+                        <div class="row h-75">
+                            <!-- Kolom Kiri - Profil -->
+                            <div style="background-image: url(img/foto.jpg); object-fit: cover; position: center;" class="col-md-6 d-flex align-items-center">
+                                <div class="p-4 text-center w-100">
+                                    <!-- Changed to transparent profile image with blur -->
+                                    <img src="img/foto.jpg" alt="profil" class="profile-img-transparent mb-4">
+                                    <h2 class="fw-bold animate__animated" style="color: #E8C999;">Andi Gustiawan</h2>
+                                    <p class="lead animate__animated" style="color: #E8C999;">Engineer</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Kolom Kanan - Tentang Saya -->
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="p-4 h-100 d-flex flex-column">
+                                    <h2 class="section-title mb-4 animate__animated" style="color: #E8C999;">Tentang Saya</h2>
+                                    <p class="animate__animated" style="color: #E8C999; font-size: 1.1rem;">
+                                        TUGAS PERANCANGAN WEB <br>
+                                        ANDI GUSTIAWAN (2023610039)<br><br>
+                                        Saya adalah seorang mahasiswa jurusan Teknik Informatika yang sedang 
+                                        belajar tentang pengembangan web dan teknologi informasi. Saat ini saya 
+                                        sedang menempuh pendidikan di Institut Teknologi Padang dan mengerjakan tugas 
+                                        perancangan web.<br><br>
+                                        Saya memiliki minat yang besar dalam bidang pengembangan web dan mobile application.
+                                        Saya terus belajar dan mengembangkan keterampilan saya dalam berbagai teknologi
+                                        seperti HTML, CSS, JavaScript, dan framework modern seperti React dan Vue.js.
+                                        Selain itu, saya juga tertarik dengan desain UI/UX untuk menciptakan pengalaman
+                                        pengguna yang lebih baik.
+                                    </p>
+                                    <div class="text-end mt-auto">
+                                        <a href="#" class="selengkapnya-btn">Selengkapnya</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Snippet: Footer dengan text-center -->
-                <!-- text-center: teks rata tengah -->
-                <!-- text-muted: warna teks abu-abu -->
-                <!-- mt-4: margin-top ukuran 4 -->
-                <footer class="text-center text-muted mt-4">
-                    <p>&copy; 2025 Andi Gustiawan</p>
-                </footer>
             </div>
         </div>
     </div>
-    <!-- Snippet: Bootstrap JS Bundle - untuk komponen interaktif Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</section>
+    
+ <!-- BIODATA SECTION - FULL PAGE -->
+ <section id="biodata" class="section-container" style="background-color: #8E1616;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-2 shadow scroll-reveal" style="min-height: 80vh;">
+                    <div class="card-body p-5">
+                        <h2 class="section-title mb-4 animate__animated" style="color: #E8C999;">Biodata</h2>
+                        <div class="row h-75">
+                            <div class="col-md-8 d-flex flex-column justify-content-center">
+                                <ul class="list-group list-group-flush animate__animated">
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-calendar-event me-2" style="color: #E8C999"></i>
+                                        <strong>Lahir :</strong> Serang, Banten 17 Agustus 2003
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-geo-alt me-2" style="color: #E8C999"></i>
+                                        <strong>Domisili :</strong> Padang, Sumatera Barat
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-envelope me-2" style="color: #E8C999"></i>
+                                        <strong>Email :</strong> moxer404@aol.com
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-telephone me-2" style="color: #E8C999"></i>
+                                        <strong>Telepon :</strong> +62 858 097 222 46
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-mortarboard me-2" style="color: #E8C999"></i>
+                                        <strong>Pendidikan :</strong> Mahasiswa Teknik Informatika
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-book me-2" style="color: #E8C999"></i>
+                                        <strong>Mata Kuliah :</strong> Perancangan Web
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-building me-2" style="color: #E8C999"></i>
+                                        <strong>Institusi :</strong> Institut Teknologi Padang
+                                    </li>
+                                    <li class="list-group-item px-0 py-3 bg-transparent" style="color: #E8C999;">
+                                        <i class="bi bi-person-badge me-2" style="color: #E8C999"></i>
+                                        <strong>NIM :</strong> 2023610039
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <div class="text-center animate__animated">
+                                    <img src="img/foto.jpg" alt="profil" class="rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <h4 style="color: #E8C999;" class="mb-0">Andi Gustiawan</h4>
+                                    <p style="color: #E8C999;">2023610039</p>
+                                    <div class="mt-4">
+                                        <h5 style="color: #E8C999;">Keterampilan</h5>
+                                        <span class="badge rounded-pill bg-secondary m-1" style="background-color: #7E1111 !important; color: #E8C999;">HTML</span>
+                                        <span class="badge rounded-pill bg-secondary m-1" style="background-color: #7E1111 !important; color: #E8C999;">CSS</span>
+                                        <span class="badge rounded-pill bg-secondary m-1" style="background-color: #7E1111 !important; color: #E8C999;">JavaScript</span>
+                                        <span class="badge rounded-pill bg-secondary m-1" style="background-color: #7E1111 !important; color: #E8C999;">PHP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+    <!-- KONTEN 1 SECTION -->
+<section id="konten1" class="section-container" style="background-color: #8E1616;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-2 shadow scroll-reveal" style="min-height: 80vh;">
+                    <div class="card-body p-5">
+                        <h2 class="section-title mb-8 animate__animated" style="color: #E8C999;">Informasi</h2>
+                        <div class="row h-100">
+                            <div class="col-md-6 d-flex flex-column justify-content-center">
+                                <p class="lead animate__animated" style="color: #E8C999; font-size: 1.2rem;">
+                                    Ini adalah web portofilio tentang diri saya, terlahir dari sebuah keluarga yang sederhana
+                                    dan memiliki cita-cita untuk menjadi seorang pengembang web yang handal. Dalam keluarga saya,
+                                    sangat mengikuti perkembangan teknologi, terutama dalam bidang teknologi informasi.
+                                </p>
+                                <x class="lead animate__animated" style="color: #E8C999; font-size: 1.2rem;">
+                                    Saya telah mengembangkan beberapa proyek web selama masa studi saya, termasuk
+                                    sistem informasi akademik dan e-commerce sederhana. Saya juga aktif berpartisipasi
+                                    dalam berbagai workshop dan seminar tentang pengembangan web untuk terus meningkatkan
+                                    kemampuan saya.
+                                </p>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                <!-- Spotify Player in a containing div -->
+                                <div class="spotify-wrapper">
+                                    <iframe style="border-radius:12px" 
+                                            src="https://open.spotify.com/embed/track/0daEJMXc3b4ZMTnvtHpuTt?utm_source=generator&autoplay=1" 
+                                            width="100%" 
+                                            height="100%" 
+                                            frameBorder="0" 
+                                            allowfullscreen="" 
+                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                            loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="konten2" class="section-container" style="background-color: #8E1616;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-2 shadow scroll-reveal" style="min-height: 80vh;">
+                    <div class="card-body p-5">
+                        <h2 class="section-title mb-4 reveal-item animate__animated" style="color: #E8C999;">Skills</h2>
+                        <div class="row g-4">
+                            <div class="col-md-12 reveal-item">
+                                <p class="lead mb-4" style="color: #E8C999; font-size: 1.1rem;">
+                                    Saya telah mempelajari berbagai teknologi dan bahasa pemrograman selama masa studi saya.    
+                                    Saya juga dapat menawarkan beberapa hal
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Carousel -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <!-- Carousel container with navigation controls -->
+                                <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <!-- First slide (3 cards) -->
+                                        <div class="carousel-item active">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-md-4 mb-4 reveal-item">
+                                                    <div class="card hover-card compact-card" style="background-color: #7E1111 !important; border: 2px solid #E8C999; border-radius: 8px;">
+                                                        <div class="card-body-skill text-center p-3">
+                                                            <i class="bi bi-laptop display-5 mb-2" style="color: #E8C999;"></i>
+                                                            <h4 class="skill-title" style="color: #E8C999;">Web Development</h4>
+                                                            <p class="skill-description" style="color: #E8C999;">Pengembangan website dengan HTML, CSS, dan JavaScript. Membangun aplikasi web responsif.</p>
+                                                            <div class="mt-2">
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">React</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Vue.js</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Bootstrap</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-4 reveal-item">
+                                                    <div class="card hover-card compact-card" style="background-color: #7E1111 !important; border: 2px solid #E8C999; border-radius: 8px;">
+                                                        <div class="card-body-skill text-center p-3">
+                                                            <i class="bi bi-code-square display-5 mb-2" style="color: #E8C999;"></i>
+                                                            <h4 class="skill-title" style="color: #E8C999;">Programming</h4>
+                                                            <p class="skill-description" style="color: #E8C999;">Programming dengan bahasa Java, Python, dan C++. Pengembangan aplikasi desktop.</p>
+                                                            <div class="mt-2">
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Java</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Python</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">C++</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-4 reveal-item">
+                                                    <div class="card hover-card compact-card" style="background-color: #7E1111 !important; border: 2px solid #E8C999; border-radius: 8px;">
+                                                        <div class="card-body-skill text-center p-3">
+                                                            <i class="bi bi-database display-5 mb-2" style="color: #E8C999;"></i>
+                                                            <h4 class="skill-title" style="color: #E8C999;">Database</h4>
+                                                            <p class="skill-description" style="color: #E8C999;">Manajemen database dengan MySQL dan MongoDB. Desain skema database untuk aplikasi.</p>
+                                                            <div class="mt-2">
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">MySQL</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">MongoDB</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Firebase</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Second slide (3 cards) -->
+                                        <div class="carousel-item">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-md-4 mb-4 reveal-item">
+                                                    <div class="card hover-card compact-card" style="background-color: #7E1111 !important; border: 2px solid #E8C999; border-radius: 8px;">
+                                                        <div class="card-body-skill text-center p-3">
+                                                            <i class="bi bi-controller display-5 mb-2" style="color: #E8C999;"></i>
+                                                            <h4 class="skill-title" style="color: #E8C999;">Gamer</h4>
+                                                            <p class="skill-description" style="color: #E8C999;">Saya senang menghabiskan waktu luang dengan bermain berbagai jenis game. Dari game strategi hingga FPS.</p>
+                                                            <div class="mt-2">
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">MLBB</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">VALORANT</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">PUBG</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-4 reveal-item">
+                                                    <div class="card hover-card compact-card" style="background-color: #7E1111 !important; border: 2px solid #E8C999; border-radius: 8px;">
+                                                        <div class="card-body-skill text-center p-3">
+                                                            <i class="bi bi-trophy display-5 mb-2" style="color: #E8C999;"></i>
+                                                            <h4 class="skill-title" style="color: #E8C999;">Joki</h4>
+                                                            <p class="skill-description" style="color: #E8C999;">Dengan keterampilan yang mumpuni, saya juga menawarkan jasa joki untuk berbagai bidang.</p>
+                                                            <div class="mt-2">
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Tugas</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Game</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Program</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-4 reveal-item">
+                                                    <div class="card hover-card compact-card" style="background-color: #7E1111 !important; border: 2px solid #E8C999; border-radius: 8px;">
+                                                        <div class="card-body-skill text-center p-3">
+                                                            <i class="bi bi-music-note-beamed display-5 mb-2" style="color: #E8C999;"></i>
+                                                            <h4 class="skill-title" style="color: #E8C999;">Gitaris</h4>
+                                                            <p class="skill-description" style="color: #E8C999;">Sebagai gitaris, saya menikmati memainkan berbagai genre musik dari pop hingga jazzy.</p>
+                                                            <div class="mt-2">
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Pop Punk</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Jazz</span>
+                                                                <span class="badge rounded-pill m-1" style="background-color: #5E0F0F; color: #E8C999;">Lo-Fi</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Carousel Controls with custom styling -->
+                                    <div class="carousel-controls-container mt-3 d-flex justify-content-center">
+                                        <button class="carousel-control-prev position-relative d-inline-block mx-2" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev" style="width: auto; height: auto; background-color: #8E1616; border: 2px solid #8E1616; border-radius: 50%; width: 40px; height: 40px;">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators position-relative d-inline-block mx-2" style="margin: 0;">
+                                            <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 10px; height: 10px; border-radius: 50%; background-color: #E8C999; margin: 0 5px;"></button>
+                                            <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="width: 10px; height: 10px; border-radius: 50%; background-color: #E8C999; margin: 0 5px;"></button>
+                                        </div>
+                                        
+                                        <button class="carousel-control-next position-relative d-inline-block mx-2" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next" style="width: auto; height: auto; background-color: #8E1616; border: 2px solid #8E1616; border-radius: 50%; width: 40px; height: 40px;">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            
+<!-- Footer -->
+<footer class="footer text-center text-light">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Andi Gustiawan</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scripts for animations and scroll effects -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the carousel with custom options
+    const skillsCarousel = new bootstrap.Carousel(document.getElementById('skillsCarousel'), {
+        interval: 5000,  // Auto-slide every 5 seconds
+        wrap: true,      // Continuous loop
+        touch: true      // Enable touch swiping on mobile
+    });
+    
+    // Add swipe support for mobile devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    const carousel = document.getElementById('skillsCarousel');
+    
+    carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+    
+    carousel.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, false);
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            // Swipe left - go to next slide
+            skillsCarousel.next();
+        }
+        
+        if (touchEndX > touchStartX) {
+            // Swipe right - go to previous slide
+            skillsCarousel.prev();
+        }
+    }
+    
+    // Animation enhancements
+    const carouselItems = document.querySelectorAll('#skillsCarousel .carousel-item');
+    
+    carouselItems.forEach(item => {
+        const cards = item.querySelectorAll('.card');
+        
+        cards.forEach((card, index) => {
+            // Add delayed animation to each card
+            card.style.transitionDelay = `${index * 0.1}s`;
+            
+            // Add animation class when slide becomes active
+            item.addEventListener('transitionend', function() {
+                if (item.classList.contains('active')) {
+                    card.classList.add('animate__animated', 'animate__fadeInUp');
+                } else {
+                    card.classList.remove('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        });
+    });
+});
+      function autoplay() {
+        var t = setTimeout(function(){
+            var button = document.querySelector('[title="Play"]') || false;
+            if (button) {
+                console.log('Click', button)
+                button.click()
+            }
+        }, 999)
+    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+        autoplay()
+    })
+    document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Jack-in-the-box animation for welcome section
+        const welcomeElement = document.getElementById('welcome-element');
+        welcomeElement.classList.add('animate__jackInTheBox');
+
+        // Activate sections on scroll
+        const revealSections = document.querySelectorAll('.reveal-section');
+        const revealItems = document.querySelectorAll('.reveal-item');
+
+        // Intersection Observer for sections
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Intersection Observer for items within sections
+        const itemObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    itemObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observe all sections and items
+        revealSections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        revealItems.forEach(item => {
+            itemObserver.observe(item);
+        });
+
+        // Active navigation based on scroll position
+        function setActiveNav() {
+            const sections = document.querySelectorAll('.section-container');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const scrollPos = window.scrollY;
+                
+                if (scrollPos >= sectionTop - 100 && scrollPos < sectionTop + sectionHeight - 100) {
+                    const id = section.getAttribute('id');
+                    
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', setActiveNav);
+        setActiveNav(); // Initial check
+    });
+</script>
 </body>
 </html>
